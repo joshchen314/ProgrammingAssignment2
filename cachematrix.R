@@ -1,4 +1,5 @@
 makeCacheMatrix <- function(x = matrix()) {
+  # this is a caculator with caching
   invM = NULL
   setM = function(y) {
     x <<- y
@@ -11,6 +12,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 cacheSolve <- function(x, ...) {
+  # caching!!!
   invM = x$getinvM()
   if (!is.null(invM)){
     message("get cached!!!")
