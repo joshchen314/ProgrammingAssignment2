@@ -1,5 +1,5 @@
 makeCacheMatrix <- function(x = matrix()) {
-  # this is a caculator with caching
+  # this is a InverseMatrix caculator with caching
   invM = NULL
   setM = function(y) {
     x <<- y
